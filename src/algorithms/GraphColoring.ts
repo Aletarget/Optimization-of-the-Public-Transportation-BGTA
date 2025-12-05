@@ -45,7 +45,7 @@ export class GraphColoring {
         }
 
         const maxColor = Math.max(...resultColors.values());
-        console.log(`✔ Coloreado greedy completo usando ${maxColor} colores.`);
+        console.log(`Coloreado greedy completo usando ${maxColor} colores. Cantidad de colores: ${maxColor}`);
 
         return resultColors;
     }
