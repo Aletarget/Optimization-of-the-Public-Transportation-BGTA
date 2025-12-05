@@ -46,9 +46,6 @@ let highlightedRoute: RouteInterface | null = null;
 
 graph.generateMinimumSpanningTree();
 
-const graphColoring = new GraphColoring(graph);
-console.log(graphColoring.greedyColoring())
-
 
 console.log(graph)
 // Estado: Estación actualmente seleccionada (para resaltar)
@@ -781,7 +778,7 @@ colorGraphBtn.addEventListener("click", () => {
         coloringResult = gc.greedyColoring();
         showColoring = true;
 
-        coloringStatus.textContent = "✔ Coloreado aplicado.";
+        coloringStatus.textContent = `Coloreado aplicado. Numero de colores: ${Math.max(...coloringResult.values())}`;
         colorGraphBtn.textContent = "Ocultar Coloreado";
     } else {
         showColoring = false;
