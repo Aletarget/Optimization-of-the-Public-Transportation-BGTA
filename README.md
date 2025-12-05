@@ -1,4 +1,4 @@
-#Proyecto con Vite — Guía Rápida
+# Proyecto con Vite — Guía Rápida
 
 Este README explica cómo instalar, ejecutar y construir el proyecto de Optimización de Transporte Público creado con **Vite** y **TypeScript**, de forma simple y directa.
 
@@ -11,7 +11,7 @@ Asegúrate de tener instalados:
 
 ---
 
-##Instalación
+## Instalación
 
 Primero, clona el repositorio e instala las dependencias del proyecto:
 
@@ -27,7 +27,7 @@ yarn
 
 -----
 
-##Ejecutar en modo desarrollo
+## Ejecutar en modo desarrollo
 
 Para iniciar el servidor local de desarrollo:
 
@@ -49,7 +49,7 @@ http://localhost:5173/
 
 -----
 
-##Construir para producción
+## Construir para producción
 
 Para generar la versión optimizada del proyecto:
 
@@ -65,7 +65,7 @@ dist/
 
 -----
 
-##Previsualizar la build
+## Previsualizar la build
 
 Si quieres ver cómo se comporta la versión final optimizada:
 
@@ -75,7 +75,7 @@ npm run preview
 
 -----
 
-##Estructura del Proyecto
+## Estructura del Proyecto
 
 Esta es la estructura específica de tu proyecto, haciendo énfasis en la división entre la lógica de la aplicación y los algoritmos:
 
@@ -99,7 +99,7 @@ project/
 
 -----
 
-##Scripts disponibles
+## Scripts disponibles
 
 ```json
 "scripts": {
