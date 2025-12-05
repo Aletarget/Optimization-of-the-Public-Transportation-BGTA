@@ -801,23 +801,49 @@ function handleHover(e: MouseEvent) {
 
     let found: StationInterface | null = null;
 
-    for (const st of graph.stations.values()) {
+    // Obtener las coordenadas del mouse en el sistema de mapa (útil para la precisión)
+    // const [mapX, mapY] = toMapCoords(x, y);
+
+    // Iteramos al revés para que las estaciones más pequeñas (SITP) no tapen las más grandes (Metro/TM)
+    const stationsArray = Array.from(graph.stations.values());
+    for (let i = stationsArray.length - 1; i >= 0; i--) {
+        const st = stationsArray[i];
         const [screenX, screenY] = toScreenCoords(st.coords);
         
         const dx = x - screenX;
         const dy = y - screenY;
+
+        // --- CALCULAR EL RADIO DE DETECCIÓN (CRÍTICO) ---
+        const baseRadiusTM = 5;
+        const baseRadiusSITP = 3;
+        const baseRadiusMetro = 6;
+        const highlightRadius = 8; 
+        const selectedRadius = 12; 
+
+        let currentRadius = (st.type === TransportTypes.sitp) 
+            ? baseRadiusSITP 
+            : (st.type === TransportTypes.metro ? baseRadiusMetro : baseRadiusTM);
+
+        // Ajustar radio si la estación está resaltada o es la seleccionada para Dijkstra/Búsqueda
+        if (highlightedStation && st.id === highlightedStation.id) {
+            currentRadius = selectedRadius;
+        } else if (dijkstraPath?.includes(st) || highlightedRoute?.stops.some(s => s.stationId === st.id)) {
+            currentRadius = highlightRadius;
+        }
         
-        const radius = (highlightedStation && st.id === highlightedStation.id) ? 10 : 6;
+        // El radio de detección debe ser el radio de dibujo + una tolerancia (ej. 5px)
+        // para compensar el tamaño real del nodo en la pantalla.
+        const detectionRadius = currentRadius + 5; 
         
-        if (dx * dx + dy * dy <= radius * radius) {
+        if (dx * dx + dy * dy <= detectionRadius * detectionRadius) {
             found = st;
             break; 
         }
     }
 
     if (found) {
-        tooltip.style.left = (e.pageX + 10) + "px";
-        tooltip.style.top = (e.pageY + 10) + "px";
+        tooltip.style.left = (e.clientX + 10) + "px";
+        tooltip.style.top = (e.clientY + 10) + "px";
         
         let typeInfo = '';
         if (found.type === TransportTypes.sitp) {
@@ -825,8 +851,14 @@ function handleHover(e: MouseEvent) {
         } else if(found.type === TransportTypes.metro){
              typeInfo = `Línea/Zona: ${found.lineName || 'N/A'}`;
         }
-        else {
+        else { // Transmilenio
             typeInfo = `Troncal: ${found.troncal || 'N/A'}`;
+        }
+        
+        // Agregar el color del grafo si está activo
+        if (showColoring && coloringResult && coloringResult.has(found.id)) {
+             const colorId = coloringResult.get(found.id)!;
+             typeInfo += `<br>Color de Grafo (ID): ${colorId}`;
         }
         
         tooltip.innerHTML = `<strong>${found.name}</strong><br>ID: ${found.id}<br>${typeInfo}`;
