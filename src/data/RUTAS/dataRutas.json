@@ -1,0 +1,167 @@
+[
+  {
+    "routeId": "A60",
+    "name": "Portal Americas - Calle 76",
+    "type": "TRANSMILENIO",
+    "capacity": 250,
+    "frequencyMinutes": 4,
+    "stops": [
+      { "stationId": 77, "sequence": 1, "stopTimeMinutes": 1 },
+      { "stationId": 79, "sequence": 2, "stopTimeMinutes": 2 },
+      { "stationId": 80, "sequence": 3, "stopTimeMinutes": 4 },
+      { "stationId": 91, "sequence": 4, "stopTimeMinutes": 2 },
+      { "stationId": 94, "sequence": 5, "stopTimeMinutes": 4 },
+      { "stationId": 88, "sequence": 6, "stopTimeMinutes": 3 },
+      { "stationId": 97, "sequence": 7, "stopTimeMinutes": 5 },
+      { "stationId": 149, "sequence": 8, "stopTimeMinutes": 6 },
+      { "stationId": 62, "sequence": 9, "stopTimeMinutes": 4 },
+      { "stationId": 65, "sequence": 10, "stopTimeMinutes": 2 },
+      { "stationId": 18, "sequence": 11, "stopTimeMinutes": 3 }
+    ]
+  },
+  {
+    "routeId": "SITP-183",
+    "name": "Circular Suba",
+    "type": "SITP",
+    "capacity": 80,
+    "frequencyMinutes": 12,
+    "stops": [
+      { "stationId": 5011, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 5009, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 5002, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 5000, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 5006, "sequence": 5, "stopTimeMinutes": 2 },
+      { "stationId": 5004, "sequence": 6, "stopTimeMinutes": 2 },
+      { "stationId": 5001, "sequence": 7, "stopTimeMinutes": 2 },
+      { "stationId": 5016, "sequence": 8, "stopTimeMinutes": 2 },
+      { "stationId": 5015, "sequence": 9, "stopTimeMinutes": 2 },
+      { "stationId": 5013, "sequence": 10, "stopTimeMinutes": 2 },
+      { "stationId": 5012, "sequence": 11, "stopTimeMinutes": 2 },
+      { "stationId": 5018, "sequence": 12, "stopTimeMinutes": 2 },
+      { "stationId": 5019, "sequence": 11, "stopTimeMinutes": 2 },
+      { "stationId": 102, "sequence": 12, "stopTimeMinutes": 2 }
+  ]
+  },
+  {
+    "routeId": "METRO-L1",
+    "name": "Línea Uno Principal",
+    "type": "METRO",
+    "capacity": 500,
+    "frequencyMinutes": 3,
+    "stops": [
+      { "stationId": 20001, "sequence": 1, "stopTimeMinutes": 1 },
+      { "stationId": 20003, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 20007, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 20008, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 20011, "sequence": 5, "stopTimeMinutes": 1 },
+      { "stationId": 20015, "sequence": 6, "stopTimeMinutes": 2 }
+    ]
+  },
+  {
+    "routeId": "B-F28",
+    "name": "Portal Amercias - Terminal",
+    "type": "TRANSMILENIO",
+    "capacity": 250,
+    "frequencyMinutes": 5,
+    "stops": [
+      { "stationId": 78, "sequence": 1, "stopTimeMinutes": 1 },
+      { "stationId": 80, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 83, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 93, "sequence": 5, "stopTimeMinutes": 2 },
+      { "stationId": 87, "sequence": 4, "stopTimeMinutes": 2 },
+      { "stationId": 23, "sequence": 6, "stopTimeMinutes": 1 },
+      { "stationId": 34, "sequence": 7, "stopTimeMinutes": 1 },
+      { "stationId": 35, "sequence": 8, "stopTimeMinutes": 1 },
+      { "stationId": 38, "sequence": 9, "stopTimeMinutes": 1 },
+      { "stationId": 47, "sequence": 10, "stopTimeMinutes": 1 },
+      { "stationId": 50, "sequence": 11, "stopTimeMinutes": 1 },
+      { "stationId": 147, "sequence": 12, "stopTimeMinutes": 1 }
+      
+    ]
+  },
+  {
+    "routeId": "SITP-902",
+    "name": "Fontibón - Engativá",
+    "type": "SITP",
+    "capacity": 60,
+    "frequencyMinutes": 20,
+    "stops": [
+      { "stationId": 401, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 405, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 410, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 415, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 420, "sequence": 5, "stopTimeMinutes": 2 }
+    ]
+  },
+  {
+    "routeId": "METRO-L2",
+    "name": "Línea Dos Sur-Oriente",
+    "type": "METRO",
+    "capacity": 480,
+    "frequencyMinutes": 6,
+    "stops": [
+      { "stationId": 501, "sequence": 1, "stopTimeMinutes": 1 },
+      { "stationId": 505, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 510, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 515, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 301, "sequence": 5, "stopTimeMinutes": 2 }
+    ]
+  },
+  {
+    "routeId": "T-D20",
+    "name": "Occidente Rápido",
+    "type": "TRANSMILENIO",
+    "capacity": 180,
+    "frequencyMinutes": 7,
+    "stops": [
+      { "stationId": 601, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 605, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 610, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 110, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 615, "sequence": 5, "stopTimeMinutes": 2 }
+    ]
+  },
+  {
+    "routeId": "SITP-A05",
+    "name": "Chapinero - Centro",
+    "type": "SITP",
+    "capacity": 50,
+    "frequencyMinutes": 15,
+    "stops": [
+      { "stationId": 701, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 705, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 710, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 715, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 105, "sequence": 5, "stopTimeMinutes": 2 }
+    ]
+  },
+  {
+    "routeId": "T-J70",
+    "name": "Suba - Universidades",
+    "type": "TRANSMILENIO",
+    "capacity": 180,
+    "frequencyMinutes": 8,
+    "stops": [
+      { "stationId": 220, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 215, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 105, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 710, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 701, "sequence": 5, "stopTimeMinutes": 1 },
+      { "stationId": 720, "sequence": 6, "stopTimeMinutes": 3 }
+    ]
+  },
+  {
+    "routeId": "SITP-K99",
+    "name": "Usaquén - Norte Local",
+    "type": "SITP",
+    "capacity": 70,
+    "frequencyMinutes": 10,
+    "stops": [
+      { "stationId": 801, "sequence": 1, "stopTimeMinutes": 2 },
+      { "stationId": 805, "sequence": 2, "stopTimeMinutes": 1 },
+      { "stationId": 810, "sequence": 3, "stopTimeMinutes": 1 },
+      { "stationId": 815, "sequence": 4, "stopTimeMinutes": 1 },
+      { "stationId": 115, "sequence": 5, "stopTimeMinutes": 2 }
+    ]
+  }
+]

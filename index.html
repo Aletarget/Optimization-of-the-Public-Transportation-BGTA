@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transmilenio B+ Tree</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <div class="controls">
+
+      <h3>Búsqueda General</h3>
+      <div>
+        <input type="text" id="search-input" placeholder="Buscar Estación o Ruta ID..." />
+        <button id="search-btn">Buscar</button>
+        <button id="next-btn" disabled>Siguiente</button>
+        <button id="clear-btn">Limpiar</button>
+        <span id="pagination-status"></span>
+      </div>
+
+      <hr>
+
+      <h3>Búsqueda de Ruta Mínima (Dijkstra)</h3>
+      <div class="dijkstra-controls">
+        <input type="text" id="start-station-input" placeholder="ID Origen" />
+        <input type="text" id="end-station-input" placeholder="ID Destino" />
+        <button id="find-route-btn">Calcular Ruta</button>
+        <span id="dijkstra-status"></span>
+      </div>
+
+      <hr>
+
+      <h3>Flujo Máximo (Capacidad / Congestión)</h3>
+      <div class="max-flow-controls">
+        <input type="text" id="flow-start-input" placeholder="ID Origen (Source)" />
+        <input type="text" id="flow-end-input" placeholder="ID Destino (Sink)" />
+        <button id="find-max-flow-btn">Analizar Congestión</button>
+        <span id="max-flow-status"></span>
+      </div>
+
+      <hr>
+
+      <h3>Árbol de Recubrimiento Mínimo (MST)</h3>
+      <div>
+        <button id="toggle-mst-btn">Mostrar MST</button>
+        <span id="mst-status"></span>
+      </div>
+
+      <hr>
+
+      <h3>Coloreado de Grafo (Frecuencias / Recursos)</h3>
+      <div>
+        <button id="color-graph-btn">Aplicar Coloreado</button>
+        <span id="coloring-status"></span>
+      </div>
+
+    </div>
+
+    <div class="map-container">
+      <canvas id="map" width="1100" height="900"></canvas>
+      <div id="tooltip"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
