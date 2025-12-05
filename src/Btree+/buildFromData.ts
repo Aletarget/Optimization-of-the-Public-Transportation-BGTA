@@ -155,12 +155,25 @@ export class BuildStructures {
 
         graph.connect(123, 5024);
         graph.connect(125, 5024);
+        graph.connect(77, 5054);
+
 
         // Conectar estaciones de sitp con sipt
         graph.connect(5001, 5016);
         graph.connect(5004, 5006);
         graph.connect(5009, 5002);
         graph.connect(5018, 5012);
+        graph.connect(5061, 5068);
+        graph.connect(5071, 5091);
+        graph.connect(5094, 5080);
+        graph.connect(5087, 5005);
+        graph.connect(5099, 5014);
+        graph.connect(5050, 5063);
+        graph.connect(5050, 5063);
+        graph.connect(5035, 5042);
+        graph.connect(5040, 5057);
+
+
 
 
     }
